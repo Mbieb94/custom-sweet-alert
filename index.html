@@ -18,27 +18,26 @@
 
 <script>
     $(function() {
-        swal.mixin({
-            width: 400,
+        const MySwal = Swal.mixin({
+            width: '400px',
             heightAuto: false,
-            // padding: '2.5rem',
+            padding: '1.5rem',
             buttonsStyling: false,
-            confirmButtonClass: 'btn btn-success',
-            confirmButtonColor: null,
-            cancelButtonClass: 'btn btn-secondary',
-            cancelButtonColor: null
+            customClass: {
+                popup: 'custom-swal-popup',
+                confirmButton: 'btn btn-danger',
+                cancelButton: 'btn btn-secondary'
+            }
         });
+
         $('#btn-swal').on('click', function () {
-            Swal.fire({
-                width: 400,
-                heightAuto: false,
-                padding: '0.5rem',
+            MySwal.fire({
                 title: 'Error!',
                 text: 'Do you want to continue',
-                icon: 'warning',
+                icon: 'success',
                 confirmButtonText: 'Cool'
-            })
-        })
+            });
+        });
     })
 </script>
 

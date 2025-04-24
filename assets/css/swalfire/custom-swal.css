@@ -721,7 +721,7 @@
     justify-content: center;
     width: 65px;
     height: 65px;
-    margin: 2.5em auto 0.6em;
+    margin: 1.5em auto 0.6em;
     border: 0.25em solid transparent;
     border-radius: 50%;
     border-color: #000;
@@ -750,8 +750,8 @@
   div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line] {
     display: block;
     position: absolute;
-    top: 2.3125em;
-    width: 2.9375em;
+    top: 1.9em;
+    width: 2em;
     height: 0.3125em;
     border-radius: 0.125em;
     background-color: #f27474;
@@ -875,16 +875,16 @@
   }
   
   div:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=tip] {
-    top: 2.875em;
-    left: 0.8125em;
+    top: 2.2em;
+    left: 0.7500em;
     width: 1.5625em;
     transform: rotate(45deg);
   }
   
   div:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=long] {
-    top: 2.375em;
+    top: 2em;
     right: 0.5em;
-    width: 2.9375em;
+    width: 2em;
     transform: rotate(-45deg);
   }
   
@@ -1068,12 +1068,12 @@
     84% {
       top: 2.1875em;
       right: 0;
-      width: 3.4375em;
+      width: 2em;
     }
     100% {
       top: 2.375em;
       right: 0.5em;
-      width: 2.9375em;
+      width: 2em;
     }
   }
   @keyframes swal2-rotate-success-circular-line {
